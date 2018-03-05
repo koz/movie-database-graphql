@@ -39,8 +39,8 @@ To learn about what's going on, check out the docs for the tools and libraries u
 
 ## After completing the wrapper, build a client example app, using many SaaS and libraries, and document it as a blogpost series or vlog in a YT channel (Inspired very much in cabin-instagram clone series)
 
-Auth0 for authentication
-Algolia for search
-Stream for feeds
-
+a. [Auth0 | AUTH
+b. [Algolia | SEARCH](https://www.algolia.com/)
+c. Stream for feeds
+d. [Sendbird for CHAT](https://sendbird.com/)
 
