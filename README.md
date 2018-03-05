@@ -4,8 +4,7 @@ This is for now a super simple wrapper of the REST API for [The Movie Database](
 
 BUUUT. I plan to make it the best way to access TMDb via a GraphQL Endpoint available, at least until it's that good that Travis decides to make the API support GraphQL in the future.
 
-[] Dead Link, publish to now and update
-Check out the [live API hosted on Heroku](https://react-async-graphql.herokuapp.com/graphiql).
+Check out the [live API hosted on Now](https://movie-database-graphql-qwqnwstigc.now.sh).
 
 ## Running the app
 
@@ -14,11 +13,20 @@ You'll need two API keys:
 1. [themoviedb.org API key](https://www.themoviedb.org/documentation/api)
 2. [Apollo Engine API key](https://engine.apollographql.com/)
 
-Run the app with:
+Run the app in local with:
 
 ```sh
-npm install
-TMDB_API_KEY=<key 1> ENGINE_API_KEY=<key 2> npm start
+yarn install
+TMDB_API_KEY=<key 1> ENGINE_API_KEY=<key 2> yarn start
+```
+
+You might want to install now's zeit.co tools to deploy:
+1. [Now Deployments](http://zeit.co/now)
+
+Deploy the app to now's cloud with:
+```sh
+yarn install
+now -e TMDB_API_KEY="<key 1>" -e ENGINE_API_KEY="<key 2>"
 ```
 
 ## Docs
