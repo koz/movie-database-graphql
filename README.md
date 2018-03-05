@@ -35,7 +35,12 @@ To learn about what's going on, check out the docs for the tools and libraries u
 
 1. [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 2. [Apollo Engine](https://www.apollographql.com/docs/engine/)
+3. [Deployment: Zeit's Docs](https://zeit.co/docs)
 
+## After completing the wrapper, build a client example app, using many SaaS and libraries, and document it as a blogpost series or vlog in a YT channel (Inspired very much in cabin-instagram clone series)
 
-## After completing the wrapper, build a client example app, using many SaaS and libraries, and document it as a blogpost series or vlog in a YT channel
+Auth0 for authentication
+Algolia for search
+Stream for feeds
+
 
