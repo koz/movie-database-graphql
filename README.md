@@ -1,7 +1,10 @@
 # The Movie Database GraphQL wrapper
 
-This is a super simple wrapper of the REST API for [The Movie Database](https://www.themoviedb.org/) to convert it to GraphQL.
+This is for now a super simple wrapper of the REST API for [The Movie Database](https://www.themoviedb.org/) to convert it to GraphQL.
 
+BUUUT. I plan to make it the best way to access TMDb via a GraphQL Endpoint available, at least until it's that good that Travis decides to make the API support GraphQL in the future.
+
+[] Dead Link, publish to now and update
 Check out the [live API hosted on Heroku](https://react-async-graphql.herokuapp.com/graphiql).
 
 ## Running the app
@@ -24,3 +27,7 @@ To learn about what's going on, check out the docs for the tools and libraries u
 
 1. [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 2. [Apollo Engine](https://www.apollographql.com/docs/engine/)
+
+
+## After completing the wrapper, build a client example app, using many SaaS and libraries, and document it as a blogpost series or vlog in a YT channel
+
