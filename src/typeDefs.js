@@ -9,6 +9,7 @@ type Query @cacheControl(maxAge: 3600) {
   movie(id: Int!): Movie
   movie_genres: [Genre]
   movies_by_genre(id: Int!): [Movie]
+  movies_upcoming(region: String!, language: String, sortBy: String, startDate: String, endDate: String): [Movie]
   tv(id: Int!): Tv
   tv_genres: [Genre]
   tv_by_genre(id: Int!): [Movie]
@@ -30,6 +31,8 @@ type Movie @cacheControl(maxAge: 3600) {
   genres: [Genre]
   genre_ids: [Int]
   release_date: String
+  original_title: String
+  original_language: String
 }
 
 type Tv @cacheControl(maxAge: 3600) {
