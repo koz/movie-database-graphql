@@ -30,6 +30,8 @@ type Movie @cacheControl(maxAge: 3600) {
   genres: [Genre]
   genre_ids: [Int]
   release_date: String
+  original_title: String
+  original_language: String
 }
 
 type Tv @cacheControl(maxAge: 3600) {
