@@ -43,6 +43,13 @@ export default {
       .then(({ results }) => results);
 
     },
+    movies_upcoming: (root, args, context) => {
+      const {region, language = 'en-US', sortBy = 'release_date.asc', startDate = new Date().toISOString(), endDate = ''} = args
+      return fetch(
+        `${TMDB_API_PATH}/discover/movie?api_key=${context.secrets.TMDB_API_KEY}&region=${region}&language=${language}&sort_by=${sortBy}&primary_release_date.gte=${startDate}&primary_release_date.lte=${endDate}`
+      ).then(res => res.json())
+      .then(({ results }) => results);
+    },
     tv: (root, args, context) => {
       return fetch(
         `${TMDB_API_PATH}/tv/${args.id}?api_key=${
@@ -78,7 +85,6 @@ export default {
         }`
       ).then(res => res.json())
       .then(({ results }) => results);
-
     },
   }
 };
