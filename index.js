@@ -1,11 +1,11 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const { graphqlExpress, graphiqlExpress } = require("apollo-server-express");
-const { makeExecutableSchema } = require("graphql-tools");
-const fetch = require("node-fetch");
-const cors = require("cors");
-const compression = require("compression");
-const { Engine } = require("apollo-engine");
+import express from "express";
+import bodyParser from "body-parser";
+import { graphqlExpress, graphiqlExpress } from "apollo-server-express";
+import { makeExecutableSchema } from "graphql-tools";
+import fetch from "node-fetch";
+import cors from "cors";
+import compression from "compression";
+import { Engine } from "apollo-engine";
 
 const TMDB_API_PATH = "https://api.themoviedb.org/3";
 
